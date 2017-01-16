@@ -4,12 +4,12 @@ var http = require('http');
 var APP_ID = undefined; // TODO Get app id
 
 var messages = {
-  
+
 }
 
 var handlers = {
   'LaunchRequest': function() {
-    this.emit(':tell', '')
+    this.emit(':tell', 'This is the Chuck Norris jokes Alexa skill.');
   }
 }
 
