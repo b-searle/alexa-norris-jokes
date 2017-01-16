@@ -4,12 +4,28 @@ var http = require('http');
 var APP_ID = undefined; // TODO Get app id
 
 var messages = {
-
+  introText: "Here's your joke. ",
+  helpMessage: "You can ask for a Chuck Norris joke, or request a joke about a specific person. You can also ask for a nerdy joke or an explicit joke."
 }
 
 var handlers = {
   'LaunchRequest': function() {
-    this.emit(':tell', 'This is the Chuck Norris jokes Alexa skill.');
+    this.emit('randomJokeIntent');
+  },
+  'randomJokeIntent': function() {
+
+  },
+  'personJokeIntent': function() {
+
+  },
+  'categoryJokeIntent': function() {
+
+  },
+  'personCategoryJokeIntent': function() {
+
+  },
+  'AMAZON.HELPINTENT': function() {
+    this.emit(':tell', messages.helpMessage);
   }
 }
 
