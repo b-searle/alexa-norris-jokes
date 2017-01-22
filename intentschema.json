@@ -3,10 +3,6 @@
         {"intent": "randomJokeIntent"},
         {"intent": "personJokeIntent", "slots": [ {"name": "person", "type": "AMAZON.US_FIRST_NAME" } ] },
         {"intent": "categoryJokeIntent", "slots": [ {"name": "jokeCategory", "type": "NORRIS_JOKE_CATEGORY"} ] },
-        {"intent": "personCategoryJokeIntent", "slots": [
-            {"name": "jokeCategory", "type": "NORRIS_JOKE_CATEGORY"}
-            {"name": "person", "type": "AMAZON.US_FIRST_NAME"},
-        ]},
         {"intent": "AMAZON.HelpIntent"}
     ]
 }

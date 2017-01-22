@@ -23,10 +23,3 @@ categoryJokeIntent give me a {jokeCategory} joke
 categoryJokeIntent give me an {jokeCategory} joke
 categoryJokeIntent I want to hear a {jokeCategory} joke
 categoryJokeIntent I want to hear an {jokeCategory} joke
-
-personCategoryJokeIntent tell me a {jokeCategory} joke about {person}
-personCategoryJokeIntent tell me an {jokeCategory} joke about {person}
-personCategoryJokeIntent give me a {jokeCategory} joke about {person}
-personCategoryJokeIntent give me an {jokeCategory} joke about {person}
-personCategoryJokeIntent tell me a {jokeCategory} {person} joke
-personCategoryJokeIntent tell me an {jokeCategory} {person} joke

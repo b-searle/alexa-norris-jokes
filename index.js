@@ -26,9 +26,6 @@ var handlers = {
   'categoryJokeIntent': function() {
     httpGet('limitTo=' + this.event.request.intent.slots.jokeCategory.value);
   },
-  'personCategoryJokeIntent': function() {
-    httpGet('limitTo=' + this.event.request.intent.slots.jokeCategory.value + '&firstName=' + this.event.request.intent.slots.person.value);
-  },
   'AMAZON.HelpIntent': function() {
     this.emit(':tell', messages.helpMessage);
   },
