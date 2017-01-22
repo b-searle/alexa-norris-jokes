@@ -1,0 +1,32 @@
+randomJokeIntent tell me a Chuck Norris joke
+randomJokeIntent tell me a joke
+randomJokeIntent give me a joke
+randomJokeIntent give me something
+randomJokeIntent I want to hear a joke
+randomJokeIntent tell me a random joke
+randomJokeIntent know any good jokes
+randomJokeIntent for a joke
+randomJokeIntent joke
+
+personJokeIntent tell me a joke about {person}
+personJokeIntent tell me a {person} joke
+personJokeIntent give me a {person} joke
+personJokeIntent give me a joke about {person}
+personJokeIntent for a joke about {person}
+personJokeIntent for a {person} joke
+personJokeIntent {person} joke
+personJokeIntent joke about {person}
+
+categoryJokeIntent tell me a {jokeCategory} joke
+categoryJokeIntent tell me an {jokeCategory} joke
+categoryJokeIntent give me a {jokeCategory} joke
+categoryJokeIntent give me an {jokeCategory} joke
+categoryJokeIntent I want to hear a {jokeCategory} joke
+categoryJokeIntent I want to hear an {jokeCategory} joke
+
+personCategoryJokeIntent tell me a {jokeCategory} joke about {person}
+personCategoryJokeIntent tell me an {jokeCategory} joke about {person}
+personCategoryJokeIntent give me a {jokeCategory} joke about {person}
+personCategoryJokeIntent give me an {jokeCategory} joke about {person}
+personCategoryJokeIntent tell me a {jokeCategory} {person} joke
+personCategoryJokeIntent tell me an {jokeCategory} {person} joke
