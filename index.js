@@ -7,9 +7,10 @@ var alexa;
 var messages = {
   appName: "Norris Jokes",
   introText: "Here's your joke. ",
-  helpMessage: "Welcome to Norris Jokes. You can ask for a Chuck Norris joke, or request a joke about a specific person. You can also ask for a nerdy joke or an explicit joke.",
+  helpMessage: "Welcome to Norris Jokes. You can ask for a Chuck Norris joke, or request a joke about a specific person. You can also ask for a nerdy joke. Would you like to hear a joke now?",
   errorMessage: "Sorry, there was an error while retrieving your joke. Please try again later.",
-  unhandledErrorMessage: "We couldn't understand your request. Please try again."
+  unhandledErrorMessage: "We couldn't understand your request. Please try again.",
+  cancelMessage: "Goodbye."
 }
 
 
@@ -27,7 +28,16 @@ var handlers = {
     httpGet('limitTo=' + this.event.request.intent.slots.jokeCategory.value);
   },
   'AMAZON.HelpIntent': function() {
-    this.emit(':tell', messages.helpMessage);
+    this.emit(':ask', messages.helpMessage);
+  },
+  'AMAZON.YesIntent': function() {
+    this.emit('randomJokeIntent');
+  },
+  'AMAZON.NoIntent': function() {
+    this.emit('AMAZON.CancelIntent');
+  },
+  'AMAZON.CancelIntent': function() {
+    this.emit(':tell', messages.cancelMessage);
   },
   'Unhandled': function() {
     this.emit(':tell', messages.unhandledErrorMessage);
